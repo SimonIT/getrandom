@@ -5,7 +5,7 @@ version = 3
 [[package]]
 name = "ariel-os-random"
 version = "0.2.0"
-source = "git+https://github.com/ariel-os/ariel-os.git?tag=v0.2.1#1d9062d957168d8ac0a3c9536123480114186163"
+source = "git+https://github.com/ariel-os/ariel-os?tag=v0.2.1#1d9062d957168d8ac0a3c9536123480114186163"
 dependencies = [
  "embassy-sync",
  "rand_chacha",

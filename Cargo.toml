@@ -76,7 +76,7 @@ wasm-bindgen-test = "0.3"
 
 # ariel-os
 [target.'cfg(getrandom_backend = "ariel-os")'.dependencies]
-ariel-os-random = { git = "https://github.com/ariel-os/ariel-os.git", tag = "v0.2.1", features = ["csprng"] }
+ariel-os-random = { version = "0.2.0", features = ["csprng"] }
 rand = { version = "0.8.5", default-features = false }
 
 [lints.rust.unexpected_cfgs]
@@ -104,3 +104,6 @@ pre-build = [
   "rm base.tar.xz",
   "rm -rf /tmp/netbsd",
 ]
+
+[patch.crates-io]
+ariel-os-random = { git = "https://github.com/ariel-os/ariel-os", tag = "v0.2.1" }
